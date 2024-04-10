@@ -4,7 +4,7 @@ class Te:
     tipos = {
                 1: ('Te negro',3,'Al desayuno'),
                 2: ('Te Verde',5,'Al medio dia'),
-                3: ('Agua de hierbas',6,'Al atardecer')
+                3: ('Infusión de hierbas',6,'Al atardecer')
                 }
         
     #Metodos    
