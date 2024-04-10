@@ -4,7 +4,7 @@ from te import Te
 def format_precio(precio):
     return "{:,}".format(precio).replace(',', '.')
 
-def imprimir_mensaje(mensaje):
+def imprimir_mensaje(mensaje): #al final no me gusto y se descarta.
     longitud = len(mensaje)
     print(f"\n{'*' * (longitud + 4)}")
     print(f"* {mensaje} *")
