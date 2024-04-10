@@ -1,29 +1,23 @@
 class Te:
-    def __init__(self):
-        #Valores de los te
-        self.valores = {300: 3000, 500: 5000}
+    #Valores de los te
+    valores = {300: 3000, 500: 5000}
+    tipos = {
+                1: ('Te negro',3,'Al desayuno'),
+                2: ('Te Verde',5,'Al medio dia'),
+                3: ('Agua de hierbas',6,'Al atardecer')
+                }
         
+    #Metodos    
     @staticmethod
     def sabor(sabor):
-        #print(sabor)
-        #sabores = {1:"Té negro",2:"Té verde",3:"Infusión de hierbas"}
-        #Te.nombre = sabores[sabor]
-        
-        #return Te.nombre
-        #vla = {1:"Se recomienda consumir al desayuno",2:"Se recomienda consumir al medio dia",3:"Se recomienda consumir al atardecer"}
-        
-        #return vla[sabor]
-        if sabor == 1:
-            return ("se recomienda consumir al desayuno")
-        elif sabor == 2:
-            return ("se recomienda consumir al medio dia")
-        elif sabor == 3:
-            return ("se recomienda consumir al atardecer")
+        if sabor in Te.tipos:
+            nombre_sabor, tiempo, recomendacion = Te.tipos[sabor]
+            return tiempo, recomendacion
+        else:
+            return None, None
         
     @staticmethod
-    def formato(self,formato):
-        #print(formato)
-        #Te.valor = Te.valores[formato]
-        return self.valores.get(formato,"Formato no disponible")
+    def formato(formato):
+        return Te.valores.get(formato, 0)
     
         
