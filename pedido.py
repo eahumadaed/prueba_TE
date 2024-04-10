@@ -31,7 +31,7 @@ def main():
     Detalle del pedido:
     Sabor del té: {sabores_texto[sabor]}
     Formato: {formato} gr
-    Precio: ${format_precio(precio)}"
+    Precio: ${format_precio(precio)}
     Tiempo de preparación: {tiempo} minutos
     Recomendación: Beber {recomendacion}
     """
